@@ -1,0 +1,242 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+    /* transition: all 2s linear; */
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+background-color: black;
+
+    /* &::-webkit-scrollbar */
+}
+.header{
+    /* background-color: black; */
+    display: flex;
+    top: 0;left: 0; right: 0;
+    position: fixed;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+padding: 1.5rem 9%;
+
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 1rem;     /* margin in btween */
+  
+}
+.navbar a:hover{
+    color: brown;
+}
+.logo{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.logo:hover{
+    color: brown;
+}
+.logo img{
+    width: 20px;
+    height: 20px;
+    padding-right:5px ;
+}
+.btn{
+    font-size: 1.8rem;
+    outline: 2px grey solid;
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    align-items: center;
+}
+.btn:hover{
+    outline: black;
+    color: brown;
+}
+.menu img{
+    width: 30px;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+background-color: white;
+margin: 10px;
+display: none;
+}
+.home{
+    margin-top: 65px;
+    background-image: url(./images/home-bg.jpg);
+    min-height: 80vh;
+    /* display: flex; */
+    /* align-items: center; */
+}
+.content{
+    align-items: center;
+}
+.home p{
+color: white;
+font-weight: bolder;
+font-size: 20px;
+text-align: center;
+padding: 10px;
+
+}
+
+#btn2{
+    width: 100px;
+    height: 35px;
+    font-size:medium;
+    border-radius: 20px;
+    outline: 2px solid skyblue;
+    background-color: transparent;
+    color: rgb(51, 81, 72);
+margin: 0rem 59rem;     
+
+}
+#btn2:hover{
+    transition: 2s linear;
+
+    background-color: aqua;
+}
+#p1{
+    color: white;
+    font-weight: bold; 
+    font-size: 30px;
+text-align: center;
+
+}
+#p2{
+    color: white;
+    font-weight: bolder; 
+    font-size: 50px;
+text-align: center;
+
+}
+.home p:hover{
+   color: rgb(76, 43, 56);
+    
+}
+.content:hover {
+    transform: scale(1);
+}
+
+.book-now{
+margin-top: -5rem;
+margin-left: 10%;
+background-color: transparent;
+box-shadow: 0.5rem 1rem rgba(17, 17, 17, 0.3);
+background-color: black;
+}
+form{
+    display: flex;
+    gap: 1.7rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+/* margin-left: 25%; */
+margin: 0rem 8rem;     
+}
+.inputs input{
+    align-items: center;
+    
+    margin-left: 30px;
+    height: 30px;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+   justify-content: space-between;
+}
+input{
+    padding: 1.4rem 1.6rem;
+    
+}
+span{
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+margin: 0rem 5rem;     
+
+}
+#btn3{
+    width: 100px;
+    height: 35px;
+    font-size:medium;
+    border-radius: 20px;
+    outline: 2px solid skyblue;
+    background-color: transparent;
+    color: rgb(51, 81, 72);
+    /* margin-left: ; */
+margin: 0rem 5rem;     
+
+}
+#btn3:hover{
+    transition: 2s linear;
+
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:500px){
+    html{
+        font-size:55% ;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+}
+@media(max-width:400px){
+    .menu img{
+        display: inline-block;
+    }
+        .navbar{
+            position: absolute;
+            top: 99% ;right: 0;left: 0;
+           
+        }
+        .navbar a{
+            margin: 2rem;
+            font-size: 2rem;
+            display: block;
+        }
+    }
+
+@media(max-width:450px){
+    html{
+        font-size:50% ;
+    }
+}
